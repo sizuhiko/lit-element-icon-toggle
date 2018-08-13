@@ -1,0 +1,18 @@
+{
+  "name": "icon-toggle",
+  "main": "icon-toggle.js",
+  "scripts": {
+    "polymer": "polymer"
+  },
+  "dependencies": {
+    "@polymer/iron-icon": "^3.0.0-pre.21",
+    "@polymer/iron-icons": "^3.0.0-pre.21",
+    "@polymer/lit-element": "^0.5.2"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.12",
+    "@webcomponents/webcomponentsjs": "^2.0.3",
+    "polymer-cli": "^1.7.0-pre.17",
+    "wct-browser-legacy": "^0.0.1-pre.11"
+  }
+}
