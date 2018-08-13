@@ -51,6 +51,12 @@ class IconToggle extends LitElement {
       <iron-icon icon="${toggleIcon}">
       </iron-icon>`;
   }
+
+  _didRender(props, changedProps, prevProps) {
+    if (changedProps.hasOwnProperty('pressed')) {
+      this.dispatchEvent(new CustomEvent('pressed-changed', {detail: {prev: prevProps['pressed'], current: this['pressed'] } })); 
+    }
+  }
   
   _shouldRender(props, changedProps, prevProps) {
     Object.keys(changedProps)
